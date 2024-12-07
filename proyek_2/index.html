@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>signin-signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" required autofocus id="username" autocomplete="off">
+                </div>
+                <div class="error-message" id="error-username-signin"></div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required id="password" autocomplete="off">
+                    <i class="fas fa-eye" id="togglePassword-signin"></i>
+                </div>
+                <div class="error-message" id="error-password-signin"></div>
+                <input type="submit" value="Login" class="btn">
+                <p class="social-text">Or sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Belum punya akun? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" required id="username-signup" autocomplete="off" autofocus>
+                </div>
+                <div class="error-message" id="error-username-signup"></div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required id="email-signup" autocomplete="off">
+                </div>
+                <div class="error-message" id="error-email-signup"></div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required id="password-signup" autocomplete="off">
+                    <i class="fas fa-eye" id="togglePassword-signup"></i> 
+                </div>
+                <div class="error-message" id="error-password-signup"></div>
+                <input type="submit" value="Sign up" class="btn">
+                <p class="social-text">Or sign in with social platform</p>
+                <div class="social-media">
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icons">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <p class="account-text">Sudah punya akun? <a href="#" id="sign-in-btn2">Sign up</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Sudah Punya Akun?</h3>
+                    <p>Selamat datang kembali! Masukkan detail akunmu dan klik Sign in untuk melanjutkan petualangan seru bersama kami</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="signin.svg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Belum Punya Akun?</h3>
+                    <p>Daftar sekarang dan nikmati fitur menarik yang siap dieksplorasi. Bergabunglah dengan komunitas kami dan mulailah perjalananmu!</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="signup.svg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
